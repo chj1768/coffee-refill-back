@@ -42,7 +42,7 @@ app.on('error', () => {
 // Start server
 if (!module.parent) {
     app.listen(config.port, config.host, () => {
-        console.log(`API server listening on ${config.host}:${config.port}, in ${config.env}`);
+        console.log(`API server listening on ${config.host}:${config.port}, in ${config.env}, (${config.name})`);
     });
 }
 
