@@ -1,0 +1,13 @@
+{
+  "name": "coffee-refill-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chj1768/coffee-refill-back.git",
+  "author": "chj&myp",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "koa": "^2.5.0"
+  },
+  "proxy": "http://localhost:4000"
+}
