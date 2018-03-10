@@ -1,13 +1,24 @@
 {
   "name": "coffee-refill-back",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/chj1768/coffee-refill-back.git",
   "author": "chj&myp",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "koa": "^2.5.0"
+  "engines": {
+    "node": ">= 7.0.0"
   },
-  "proxy": "http://localhost:4000"
+  "main": "app",
+  "scripts": {
+    "start": "node app",
+    "dev": "NODE_ENV=development nodemon --quiet | bunyan"
+  },
+  "dependencies": {
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
 }
