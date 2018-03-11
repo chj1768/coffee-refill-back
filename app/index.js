@@ -30,11 +30,10 @@ app.use(
 app.use(responseHandler());
 
 // Bootstrap application router
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(router.routes()).use(router.allowedMethods());
 
 // Handle uncaught errors
-app.on('error', () => {
+app.on('error', (e) => {
     console.log('Unhandled exception occured');
 });
 

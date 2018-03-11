@@ -10,7 +10,7 @@
   "main": "app",
   "scripts": {
     "start": "node app",
-    "dev": "NODE_ENV=development nodemon --quiet | bunyan"
+    "start:dev" : "nodemon --watch app/ app"
   },
   "dependencies": {
     "kcors": "^2.2.1",
