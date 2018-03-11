@@ -1,4 +1,3 @@
-'use strict';
 const config = require('./config');
 
 const Koa = require('koa');
@@ -42,7 +41,7 @@ app.on('error', () => {
 // Start server
 if (!module.parent) {
     app.listen(config.port, config.host, () => {
-        console.log(`API server listening on ${config.host}:${config.port}, in ${config.env}, (${config.name})`);
+        console.log(`API server listening on ${config.host}:${config.port}, in ${config.env}`);
     });
 }
 

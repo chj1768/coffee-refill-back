@@ -5,6 +5,7 @@ exports.welcome = ctx => {
     const data = {
         name: pkginfo.name,
         version: pkginfo.version,
+        description: pkginfo.description,
         author: pkginfo.author
     };
 
