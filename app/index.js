@@ -5,7 +5,7 @@ const bodyParser = require('koa-bodyparser');
 const cors = require('kcors');
 const responseHandler = require('./middlewares/responseHandler');
 const router = require('./routes');
-
+const dbConnect = require('./config/dbConnect');
 
 const app = new Koa();
 
@@ -28,6 +28,8 @@ app.use(
     })
 );
 app.use(responseHandler());
+
+app.use( ctx => dbConnect.createConnect( ctx ));
 
 // Bootstrap application router
 app.use(router.routes()).use(router.allowedMethods());
