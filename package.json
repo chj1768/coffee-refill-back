@@ -10,13 +10,14 @@
   "main": "app",
   "scripts": {
     "start": "node app",
-    "start:dev" : "nodemon --watch app/ app"
+    "start:dev": "nodemon --watch app/ app"
   },
   "dependencies": {
     "kcors": "^2.2.1",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.0.9"
   },
   "devDependencies": {
     "nodemon": "^1.14.12"
